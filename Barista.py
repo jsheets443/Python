@@ -1,23 +1,21 @@
-from subprocess import BELOW_NORMAL_PRIORITY_CLASS
-
-
 print("Welcome to the coffee shop")
 #input variable in following format nameofvariable = input()
 name = input("What is your name?\n")
-#To add to string add + variablename + unless at the beginning r end of sentence
+#To add to string add + variablename + unless at the beginning or end of sentence
 #if else statements
-#ctrl+tab backsteps off If for else
-if name == "Ben":
+#shift+tab backsteps 1 indentation level
+if name == "Ben" or name == "Karen" or name == "Loki":
     #nested if statement creation
     evil_status = input("Are you evil?\n")
-    if evil_status == "Yes":
-        print("You're not welcome here evil Ben, get out!!!")
+    good_deeds = int(input("How many good deeds have you done today " + name + " ? "))
+    if evil_status == "yes" and good_deeds < 4:
+        print("You're not welcome here evil " + name + " Get out now while I still let you live")
         exit()
-    else: print("Oh so you're one of those good Bens, come on in Good Ben")
+    else: print("Oh so you're one of those good " + name + ", come on in Good " + name)
 else:
     print("Hello " + name + " Thank you for coming in today.\n\n")
 
-menu = "Coffee, Green Tea, Chai, Cappuccino, and Frappacciono"
+menu = "Coffee, Green Tea, Chai, Cappuccino, and Frappacciono"  
 #\n means new line
 print(name + ", what would you like from our menu today? Here is what we are serving.\n" + menu)
 

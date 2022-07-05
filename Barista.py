@@ -16,7 +16,6 @@ quantity = input("How many drinks would you like?\n")
 
 total = price * int(quantity)
 
-print()
+print("Thank you for your order, your total is  " + str(total))
 
-print("THat sounds wonderful, " + name + ", we'll have that " + order + " ready for you in a just a few moments")
-
+print("That sounds wonderful, " + name + ", we'll have that " + order + " ready for you in a just a few moments")
